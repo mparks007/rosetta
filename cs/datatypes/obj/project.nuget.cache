@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oYu47X05Onr5HVCV6OCbRxVu7UAZn8FUuEaniCTAHYjc5+kREIaR3vQUF3SmbTRNjSnEH07N2EjN2AJUXrEivg==",
+  "success": true,
+  "projectFilePath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matt\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.2\\microsoft.netframework.referenceassemblies.net48.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

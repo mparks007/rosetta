@@ -1,0 +1,18 @@
+data types
+    built-in value types (lots)
+    built-in reference types (string, object, dynamic, void*)
+    implicit (var)
+    anonymous (var)
+    tuple
+    custom types (enum, struct, class, interface, delegate, record)
+    generics
+variable declarations
+string formatting
+conditional/branching
+loops
+    for
+    foreach
+    while
+    do
+methods/functions
+concurrency

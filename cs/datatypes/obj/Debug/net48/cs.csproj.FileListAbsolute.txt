@@ -1,0 +1,11 @@
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.csproj.CoreCompileInputs.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.AssemblyInfoInputs.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.AssemblyInfo.cs
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net48\cs.exe
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net48\cs.pdb
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.exe
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.pdb
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net48\cs.exe.config
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.csproj.AssemblyReference.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.csproj.SuggestedBindingRedirects.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net48\cs.GeneratedMSBuildEditorConfig.editorconfig
