@@ -16,25 +16,25 @@ namespace datatypes
             {
                 get => _age;
                 set => _age = value;
-            }            
+            }
 
             // read-write
             public bool IsHappy
             {
                 get => _isHappy;
                 set => _isHappy = value;
-            }            
+            }
 
-            public Person() {}
+            public Person() { }
 
             public Person(string name, int age, bool isHappy)
             {
                 _name = name; // direct to private field since Name is read-only property
                 Age = age;
-                IsHappy = isHappy; 
+                IsHappy = isHappy;
             }
 
-            public override string ToString() => $"Name:{Name}, Age:{Age}, IsHappy:{IsHappy}"; 
+            public override string ToString() => $"Name:{Name}, Age:{Age}, IsHappy:{IsHappy}";
         }
     }
 }

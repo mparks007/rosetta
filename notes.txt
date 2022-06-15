@@ -6,13 +6,10 @@ data types
     tuple
     custom types (enum, struct, class, interface, delegate, record)
     generics
-variable declarations
 string formatting
-conditional/branching
-loops
-    for
-    foreach
-    while
-    do
+flow control
+    Selection Statements – This consists of if, else, switch, and case branching.
+    Iteration Statements – This consists of do, for, foreach, and while looping.
+    Jump Statements – This consists of break, continue, return, and goto statements.
 methods/functions
 concurrency

@@ -1,7 +1,0 @@
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net451\cs.exe
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net451\cs.pdb
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net451\cs.csproj.CoreCompileInputs.cache
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net451\cs.AssemblyInfoInputs.cache
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net451\cs.AssemblyInfo.cs
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net451\cs.exe
-C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net451\cs.pdb

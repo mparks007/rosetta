@@ -1,0 +1,11 @@
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\bin\Debug\net48\flowcontrol.exe.config
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\bin\Debug\net48\flowcontrol.exe
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\bin\Debug\net48\flowcontrol.pdb
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.csproj.AssemblyReference.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.csproj.SuggestedBindingRedirects.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.GeneratedMSBuildEditorConfig.editorconfig
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.AssemblyInfoInputs.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.AssemblyInfo.cs
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.csproj.CoreCompileInputs.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.exe
+C:\xspace\src\github.com\mparks007\rosetta\cs\flowcontrol\obj\Debug\net48\flowcontrol.pdb

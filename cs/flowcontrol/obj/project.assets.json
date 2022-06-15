@@ -435,11 +435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\datatypes.csproj",
-      "projectName": "datatypes",
-      "projectPath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\datatypes.csproj",
+      "projectUniqueName": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\flowcontrol\\flowcontrol.csproj",
+      "projectName": "flowcontrol",
+      "projectPath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\flowcontrol\\flowcontrol.csproj",
       "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-      "outputPath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\obj\\",
+      "outputPath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\flowcontrol\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

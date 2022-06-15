@@ -15,9 +15,9 @@ namespace datatypes
             {
                 get => _side;
                 set => _side = value;
-            }            
+            }
 
-            public Square() {}
+            public Square() { }
 
             public Square(double side)
             {
@@ -28,8 +28,8 @@ namespace datatypes
             {
                 return Side * Side;
             }
-            
-            public override string ToString() => $"Side:{Side}, Area:{GetArea()}"; 
+
+            public override string ToString() => $"Side:{Side}";
         }
 
         class Rectangle : IShape
@@ -41,15 +41,15 @@ namespace datatypes
             {
                 get => _height;
                 set => _height = value;
-            }            
+            }
 
             public double Width
             {
                 get => _width;
                 set => _width = value;
-            }            
+            }
 
-            public Rectangle() {}
+            public Rectangle() { }
 
             public Rectangle(double height, double width)
             {
@@ -61,8 +61,8 @@ namespace datatypes
             {
                 return Height * Width;
             }
-            
-            public override string ToString() => $"Heigh:{Height}, Width:{Width}, Area:{GetArea()}"; 
+
+            public override string ToString() => $"Height:{Height}, Width:{Width}";
         }
     }
 }
