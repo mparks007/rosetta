@@ -1,12 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {},
-    ".NETFramework,Version=v4.8/win7-x86": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": []
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\i845471\\.nuget\\packages\\": {},
@@ -32,7 +31,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
-        "net48"
+        "net60"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -42,7 +41,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net48": {
+        "net6.0": {
+          "targetAlias": "net60",
           "projectReferences": {}
         }
       },
@@ -53,11 +53,24 @@
       }
     },
     "frameworks": {
-      "net48": {}
-    },
-    "runtimes": {
-      "win7-x86": {
-        "#import": []
+      "net6.0": {
+        "targetAlias": "net60",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

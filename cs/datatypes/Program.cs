@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// dotnet new console --framework net4.8
 namespace datatypes
 {
     partial class Program
@@ -32,7 +31,7 @@ namespace datatypes
             short short1 = -32768;
             Int16 short2 = 32767;
             Console.WriteLine($"Type(short): short1:{short1}, short2:{short2}");
-            unchecked // to allow overflowing short
+            unchecked // to allow overflowing 
             {
                 short short3 = (short)(32767 + 1); // overflowing short, will wrap around to min -32768
                 Console.WriteLine($"Type(short): short3:{short3}");
@@ -48,7 +47,7 @@ namespace datatypes
             int int0; // unassigned so can't use
             int int1 = -2147483648;
             Int32 int2 = 2147483647;
-            // int int3 = null; // can't set value types (such as int) to null unless use 'nullable' syntax, like int? (see next line), which allows a value type to have THREE states: unset/null, zero/default-value, other-value
+            // int int3 = null; // can't set value types (such as int) to null unless use 'nullable' syntax, like "int?" (see next line), which allows a value type to have THREE states: unset/null, zero/default-value, other-value
             int? int4 = null;
             Console.WriteLine($"Type(int): int1:{int1}, int2:{int2}, int4:{int4}");
 
@@ -85,7 +84,8 @@ namespace datatypes
             bool bool0; // unassigned so can't use
             bool bool1 = true;
             bool bool2 = !bool1;
-            Console.WriteLine($"Type(bool): bool1:{bool1}, bool2:{bool2}");
+            bool bool3 = true || false;
+            Console.WriteLine($"Type(bool): bool1:{bool1}, bool2:{bool2}, bool3:{bool3}");
 
             // U+0000 (aka '\0') to U+FFFF (16 bit)
             char char0; // unassigned so can't use
@@ -120,19 +120,21 @@ namespace datatypes
             string string1 = "Hello";
             String string2 = new string(new char[] { 'G', 'o', 'o', 'd', 'b', 'y', 'e' });
             Console.WriteLine($"Type(string): string1:{string1}, string2:{string2}");
+            Console.WriteLine($"string1.Length: {string1.Length}");
+            Console.WriteLine($"string1[1]: {string1[1]}");
 
             object object0; // unassigned so can't use
             object object1 = null;
-            object object2 = new int();
+            object someInt = new int();
             Object object3 = null;
-            Object object4 = new Person();
-            Console.WriteLine($"Type(object): object1:{object1}, object2:{object2}, object3:{object3}, object4:{object4}");
+            Object person = new Person();
+            Console.WriteLine($"Type(object): object1:{object1}, someInt:{someInt}, object3:{object3}, person:{person}");
 
             // mostly like Object
             dynamic dynamic0; // unassigned so can't use
             dynamic dynamic1 = null;
-            dynamic dynamic2 = new Data();
-            Console.WriteLine($"Type(dynamic): dynamic1:{dynamic1}, dynamic2:{dynamic2}");
+            dynamic someData = new Data();
+            Console.WriteLine($"Type(dynamic): dynamic1:{dynamic1}, someData:{someData}");
 
             // uncommon but can allow interesting things
             unsafe // also have to compile in /unsafe mode, which for VS Code, add <AllowUnsafeBlocks>true</AllowUnsafeBlocks> to <PropertyGroup>
@@ -160,8 +162,8 @@ namespace datatypes
             //---------------
             Console.WriteLine("\n***Anonymous Type***\n");
 
-            var v = new { ProductName = "Honey Combs", Price = 4.99 };
-            Console.WriteLine($"Type(anonymous): ProductName:{v.ProductName}, Price:{v.Price}");
+            var somethin = new { ProductName = "Honey Combs", Price = 4.99 };
+            Console.WriteLine($"Type(anonymous): ProductName:{somethin.ProductName}, Price:{somethin.Price}");
 
             //-----------
             // Tuple Type
@@ -187,13 +189,13 @@ namespace datatypes
 
             // struct (see Struct.cs)
             Data struct0; // unassigned so can't use
-            Data struct1 = new Data() { Name = "SomeName", Age = 25, Height = Height.Average };
-            Data struct2 = new Data("Namey", 100, Height.Short);
-            Data struct3 = new Data();
-            struct3.Name = "SomeOtherName";
-            struct3.Age = 51;
-            struct3.Height = Height.VeryTall;
-            Console.WriteLine($"Type(struct): struct1:{struct1}, struct2:{struct2}, struct3:{struct3}");
+            Data someData1 = new Data() { Name = "SomeName", Age = 25, Height = Height.Average };
+            Data someData2 = new Data("Namey", 100, Height.Short);
+            Data someData3 = new Data();
+            someData3.Name = "SomeOtherName";
+            someData3.Age = 51;
+            someData3.Height = Height.VeryTall;
+            Console.WriteLine($"Type(struct): someData1:{someData1}, someData2:{someData2}, someData3:{someData3}");
 
             // class (see Class.cs)
             Person person0; // unassigned so can't use
@@ -213,14 +215,14 @@ namespace datatypes
             printer = PrintText;
             printer("SomeText");
 
-            CalcCallback calc0 = Add;
-            Console.WriteLine($"Type(delegate): Add:{calc0(10, 20)}");
-            CalcCallback calc1 = Subtract;
-            Console.WriteLine($"Type(delegate): Subtract:{calc1(10, 20)}");
-            CalcCallback calc2 = Multiply;
-            Console.WriteLine($"Type(delegate): Multiply:{calc2(10, 20)}");
-            CalcCallback calc3 = Divide;
-            Console.WriteLine($"Type(delegate): Divide:{calc3(10, 20)}");
+            CalcCallback add = Add;
+            Console.WriteLine($"Type(delegate): Add:{add(10, 20)}");
+            CalcCallback sub = Subtract;
+            Console.WriteLine($"Type(delegate): Subtract:{sub(10, 20)}");
+            CalcCallback mult = Multiply;
+            Console.WriteLine($"Type(delegate): Multiply:{mult(10, 20)}");
+            CalcCallback div = Divide;
+            Console.WriteLine($"Type(delegate): Divide:{div(10, 20)}");
 
             DoSomethingCallback hello = Hello;
             DoSomethingCallback sup = Sup;

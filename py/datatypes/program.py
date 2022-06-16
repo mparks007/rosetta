@@ -8,20 +8,42 @@ if __name__ == "__main__":
     print('***Numeric Types***\n')
     # int, float, complex
 
-    i0 = 10
-    f0 = 2.5
-    i1 = int(f0)
-    f1 = 3e4
-    f2 = 5e-2
-    f3 = float(i0)
-    c = 2+6j
-    print(f'Type(int): i0:{i0}, type(i0):{type(i0)}')
-    print(f'Type(float): f0:{f0}, type(f0):{type(f0)}')
-    print(f'Type(int): i1:{i1}, type(i1):{type(i1)}')
-    print(f'Type(float): f1:{f1}, type(f1):{type(f1)}')
-    print(f'Type(float): f2:{f2}, type(f2):{type(f2)}')
-    print(f'Type(float): f3:{f3}, type(f3):{type(f3)}')
-    print(f'Type(complex): c:{c}, type(c):{type(c)}')
+    someInt = 10
+    print(f'Type(int): someInt:{someInt}, type(someInt):{type(someInt)}')
+
+    someFloat = 2.5
+    print(
+        f'Type(float): someFloat:{someFloat}, type(someFloat):{type(someFloat)}')
+
+    intFromFloat = int(someFloat)  # will drop the decimal part
+    print(
+        f'Type(int): intFromFloat:{intFromFloat}, type(intFromFloat):{type(intFromFloat)}')
+
+    floatAsExponential = 3e4
+    print(
+        f'Type(float): floatAsExponential:{floatAsExponential}, type(floatAsExponential):{type(floatAsExponential)}')
+
+    floatAsNegExponential = 5e-2
+    print(
+        f'Type(float): floatAsNegExponential:{floatAsNegExponential}, type(floatAsNegExponential):{type(floatAsNegExponential)}')
+
+    floatFromInt = float(someInt)
+    print(
+        f'Type(float): floatFromInt:{floatFromInt}, type(floatFromInt):{type(floatFromInt)}')
+
+    someComplex = 2+6j  # number before j as the imaginary part
+    print(
+        f'Type(complex): someComplex:{someComplex}, type(someComplex):{type(someComplex)}')
+
+    # optional second value (5 here) as imaginary part
+    complexFromFunc = complex(3, 5)
+    print(
+        f'Type(complex): complexFromFunc:{complexFromFunc}, type(complexFromFunc):{type(complexFromFunc)}')
+
+    print("Binary: 0b1101010:", 0b1101010)
+    print("Hex: 0xAF:", 0xAF)
+    print("Hex/Binary: 0xFB + 0b11:", 0xFB + 0b11)
+    print("Octal: 0o13:", 0o13)
 
     # ------------
     # Boolean Type
@@ -29,55 +51,146 @@ if __name__ == "__main__":
     print('\n***Boolean Type***\n')
     # bool
 
-    b0 = True
-    b1 = not b0
-    b2 = True or False
-    print(f'Type(bool): b0:{b0}, b1:{b1}, b2:{b2}')
+    someBool = True
+    boolFromNotOfBool = not someBool
+    boolFromOr = True or False
+    print(
+        f'Type(bool): someBool:{someBool}, boolFromNotOfBool:{boolFromNotOfBool}, boolFromOr:{boolFromOr}')
 
     # ---------
     # Text Type
     # ---------
     print('\n***Text Type***\n')
-    # str
+    # str (aka string)
+    # https://www.programiz.com/python-programming/string
 
-    s0 = ''  # or ""
-    s1 = 'Hello'  # or "Hello"
-    s2 = 'Here are "double-quotes" in a string'
-    s3 = "Let's try apostrophe"
+    str0 = ''  # or ""
+    str1 = 'Hello'  # or "Hello"
+    str2 = 'Here are "double-quotes" in a string'  # if want to have " in the string
+    str3 = "Let's try apostrophe"  # if want to have ' in the string
     print(
-        f'Type(str): s0:{s0}, s1:{s1}, s2:{s2}, s3:{s3}, type(s3):{type(s3)}')
-    s4 = """This is
+        f'Type(str): str0:{str0}, str1:{str1}, str2:{str2}, str3:{str3}, type(str3):{type(str3)}')
+
+    strWrap0 = """This is
     a multi-line string"""
-    s5 = '''This is
+    strWrap1 = '''This is
     too'''
-    print(f'Type(str): s4:{s4}, s5:{s5}')
+    print(f'Type(str): strWrap0:{strWrap0}, strWrap1:{strWrap1}')
+
+    print("Hello * 3 =", "Hello" * 3)
+
+    someText = "SomeText"
+    print('someText =', someText)
+    print('someText[0] =', someText[0])  # first character
+    print('someText[-1] =', someText[-1])  # last character
+    # last character
+    print('someText[len(someText) - 1] =', someText[len(someText) - 1])
+    # slicing 2nd character to end
+    print('Slicing: someText[1:] =', someText[1:])
+    # slicing 2nd to 5th character
+    print('Slicing: someText[1:5] =', someText[1:5])
+    # slicing uyp to 5th character
+    print('Slicing: someText[:5] =', someText[:5])
+    # slicing 6th to 2nd last character
+    print('Slicing: someText[5:-2] =', someText[5:-2])
 
     # ------------
     # Mapping Type
     # ------------
     print('\n***Mapping Type***\n')
-    # dict
+    # dict (aka dictionary)
+    # https://www.programiz.com/python-programming/dictionary
 
-    d0 = {}
-    d1 = {
+    dict0 = {}
+    bookMeta = {  # try with immediate info
         "title": "Dune",
         "author": "Frank Herbert",
         "pages": 300,
         "cost": 7.99
     }
-    d2 = {
-    }
-    d2["TX Tags Seen"] = 4
-    d2["OK Tags Seen"] = 3
-    d2["TX Tags Seen"] += 1
     print(
-        f'Type(dict): d0:{d0}, d1:{d1}, d2:{d2}, "KS Tags Seen":{d2.get("KS Tags Seen")}',)
+        f'Type(dict): dict0:{dict0}, bookMeta:{bookMeta}',)
+
+    licenseFinds = {  # try as empty start, then add stuff after
+    }
+    licenseFinds["TX Tags Seen"] = 4
+    licenseFinds["OK Tags Seen"] = 3
+    licenseFinds["TX Tags Seen"] += 1
+    print(
+        f'Type(dict): licenseFinds:{licenseFinds}, "KS Tags Seen":{licenseFinds.get("KS Tags Seen")}',)  # licenseFinds["KS Tags Seen"] throws since not found. ".get" doesn't throw
 
     # ---------
     # Set Types
     # ---------
     print('\n***Set Types***\n')
-    # set, frozenset
+    # set (dupes auto-removed, nondeterministic order, only immutables)
+    # https://www.programiz.com/python-programming/set
+
+    emptySet = set()
+    print(f"Type(set): emptySet:{emptySet}")
+
+    ctorViaList = set(["car", "truck", "van"])
+    print(f"Type(set): ctorViaList:{ctorViaList}")
+
+    homes = {
+        "Small": "Cheap",
+        "Medium": "Affordable",
+        "Large": "BigLoan"
+    }
+    homeSizes = set(homes)  # source is dict keys, or can do: homes.keys()
+    print(f"Type(set): homeSizes:{homeSizes}")
+    homeCosts = set(homes.values())  # source is dict values
+    print(f"Type(set): homeCosts:{homeCosts}")
+
+    pets = {"dog", "cat", "hamster", "dog"}
+    print(f"Type(set): pets:{pets}")
+    pets.add("fish")  # add a single element
+    print(f"Type(set): pets:{pets}")
+    # add a list, including dupe dog to prove it doesn't dupe
+    pets.update(["dog", "turtle", "lizard"])
+    print(f"Type(set): pets:{pets}")
+    # or can use .remove (but remove will throw key error if not found)
+    pets.discard("lizard")
+    print(f"Type(set): pets:{pets}")
+    print('Type(set): "chicken" in pets: ' + str("chicken" in pets))
+    pets.clear()
+    print(f"Type(set): pets:{pets}")
+
+    domesticAnimals = {"dog", "cat", "elephant"}
+    wildAnimals = {"lion", "tiger", "elephant"}
+    # or with pipe: = domesticAnimals | wildAnimals
+    unionOfAnimals = domesticAnimals.union(wildAnimals)
+    print(f"Type(set:union): unionOfAnimals:{unionOfAnimals}")
+    intersectionOfAnimals = domesticAnimals.intersection(
+        wildAnimals)  # or with 'and': = domesticAnimals & wildAnimals
+    print(f"Type(set:union): intersectionOfAnimals:{intersectionOfAnimals}")
+
+    # frozenset (immutable version of set)
+    # https://www.programiz.com/python-programming/methods/built-in/frozenset
+
+    emptyFrozenset = frozenset()
+    print(f"Type(frozenset): emptyFrozenset:{emptyFrozenset}")
+
+    ctorViaList1 = frozenset(["car", "truck", "van"])
+    print(f"Type(frozenset): ctorViaList1:{ctorViaList1}")
+    homes = {
+        "Small": "Cheap",
+        "Medium": "Affordable",
+        "Large": "BigLoan"
+    }
+    # source is dict keys, or can do: homes.keys()
+    homeSizes = frozenset(homes)
+    print(f"Type(frozenset): homeSizes:{homeSizes}")
+    homeCosts = frozenset(homes.values())  # source is dict values
+    print(f"Type(frozenset): homeCosts:{homeCosts}")
+
+    pets = frozenset(["dog", "cat", "hamster", "dog"])
+    print(f"Type(frozenset): pets:{pets}")
+    myPets = frozenset(["dog", "cat"])
+    print(f"Type(frozenset): myPets:{myPets}")
+    intersectionofPets = pets & myPets  # or: = pets.intersection(myPets)
+    print(
+        f"Type(frozenset:intersection): intersectionofPets:{intersectionofPets}")
 
     # --------------
     # Sequence Types
@@ -99,7 +212,7 @@ if __name__ == "__main__":
     # enumeration (uses a library, see enum.py)
     # https: // docs.python.org/3/library/enum.html
 
-    # struct (not really a Python thing like many other languaes)
+    # struct (not really a Python thing)
 
     # class (see class.py)
 
