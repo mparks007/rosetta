@@ -8,16 +8,12 @@ if __name__ == "__main__":
     print('***Numeric Types***\n')
     # int, float, complex
 
-    someInt = 10
+    someInt = 50
     print(f'Type(int): someInt:{someInt}, type(someInt):{type(someInt)}')
 
     someFloat = 2.5
     print(
         f'Type(float): someFloat:{someFloat}, type(someFloat):{type(someFloat)}')
-
-    intFromFloat = int(someFloat)  # will drop the decimal part
-    print(
-        f'Type(int): intFromFloat:{intFromFloat}, type(intFromFloat):{type(intFromFloat)}')
 
     floatAsExponential = 3e4
     print(
@@ -26,10 +22,6 @@ if __name__ == "__main__":
     floatAsNegExponential = 5e-2
     print(
         f'Type(float): floatAsNegExponential:{floatAsNegExponential}, type(floatAsNegExponential):{type(floatAsNegExponential)}')
-
-    floatFromInt = float(someInt)
-    print(
-        f'Type(float): floatFromInt:{floatFromInt}, type(floatFromInt):{type(floatFromInt)}')
 
     someComplex = 2+6j  # number before j as the imaginary part
     print(
@@ -40,10 +32,19 @@ if __name__ == "__main__":
     print(
         f'Type(complex): complexFromFunc:{complexFromFunc}, type(complexFromFunc):{type(complexFromFunc)}')
 
-    print("Binary: 0b1101010:", 0b1101010)
-    print("Hex: 0xAF:", 0xAF)
-    print("Hex/Binary: 0xFB + 0b11:", 0xFB + 0b11)
-    print("Octal: 0o13:", 0o13)
+    # casting
+
+    floatFromInt = float(someInt)
+    print(
+        f'Casting: floatFromInt:{floatFromInt}, type(floatFromInt):{type(floatFromInt)}')
+
+    floatFromInt += .5
+    print(
+        f'Casting: floatFromInt:{floatFromInt}, type(floatFromInt):{type(floatFromInt)}')
+
+    intFromFloat = int(floatFromInt)  # will drop the decimal part
+    print(
+        f'Casting: intFromFloat:{intFromFloat}, type(intFromFloat):{type(intFromFloat)}')
 
     # ------------
     # Boolean Type
@@ -80,11 +81,15 @@ if __name__ == "__main__":
     print("Hello * 3 =", "Hello" * 3)
 
     someText = "SomeText"
-    print('someText =', someText)
-    print('someText[0] =', someText[0])  # first character
-    print('someText[-1] =', someText[-1])  # last character
+    print('Type(str): someText =', someText)
+    print('Type(str): someText[0] =', someText[0])  # first character
+    print('Type(str): someText[-1] =', someText[-1])  # last character
     # last character
-    print('someText[len(someText) - 1] =', someText[len(someText) - 1])
+    print('Type(str): someText[len(someText) - 1] =',
+          someText[len(someText) - 1])
+
+    # slicing
+
     # slicing 2nd character to end
     print('Slicing: someText[1:] =', someText[1:])
     # slicing 2nd to 5th character
@@ -93,6 +98,13 @@ if __name__ == "__main__":
     print('Slicing: someText[:5] =', someText[:5])
     # slicing 6th to 2nd last character
     print('Slicing: someText[5:-2] =', someText[5:-2])
+
+    # special
+
+    print("Binary: 0b1101010:", 0b1101010)
+    print("Hex: 0xAF:", 0xAF)
+    print("Hex/Binary: 0xFB + 0b11:", 0xFB + 0b11)
+    print("Octal: 0o13:", 0o13)
 
     # ------------
     # Mapping Type

@@ -81,12 +81,6 @@ namespace datatypes
             UIntPtr uintptr2 = (UIntPtr)0x7FFFFFFF;
             Console.WriteLine($"Type(UIntPtr): uintptr2:{uintptr2}");
 
-            bool bool0; // unassigned so can't use
-            bool bool1 = true;
-            bool bool2 = !bool1;
-            bool bool3 = true || false;
-            Console.WriteLine($"Type(bool): bool1:{bool1}, bool2:{bool2}, bool3:{bool3}");
-
             // U+0000 (aka '\0') to U+FFFF (16 bit)
             char char0; // unassigned so can't use
             char char1 = 'a';
@@ -111,6 +105,23 @@ namespace datatypes
             Decimal decimal2 = 1.5m;
             Console.WriteLine($"Type(decimal): decimal1:{decimal1}, decimal2:{decimal2}");
 
+            // casting
+
+            int someInt = 50;
+            Console.WriteLine($"Casting: somInt:{someInt}");
+            float floatFromInt = (float)50;
+            Console.WriteLine($"Casting: floatFromInt:{floatFromInt}");
+            floatFromInt += (float).5;
+            Console.WriteLine($"Casting: floatFromInt:{floatFromInt}");
+            int intFromFloat = (int)floatFromInt;
+            Console.WriteLine($"Casting: intFromFloat:{intFromFloat}");
+
+            bool bool0; // unassigned so can't use
+            bool bool1 = true;
+            bool bool2 = !bool1;
+            bool bool3 = true || false;
+            Console.WriteLine($"Type(bool): bool1:{bool1}, bool2:{bool2}, bool3:{bool3}");
+
             //-------------------------
             // Built-In Reference Types
             //-------------------------
@@ -120,15 +131,36 @@ namespace datatypes
             string string1 = "Hello";
             String string2 = new string(new char[] { 'G', 'o', 'o', 'd', 'b', 'y', 'e' });
             Console.WriteLine($"Type(string): string1:{string1}, string2:{string2}");
-            Console.WriteLine($"string1.Length: {string1.Length}");
-            Console.WriteLine($"string1[1]: {string1[1]}");
+            string string3 = @"Here are ""double-quotes"" in a string";  // if want to have " in the string (notice start with @)...OR can use \" instead of "" and don't need @
+            string string4 = "Let's try apostrophe";  // Nothing special
+            Console.WriteLine($"Type(string): string3:{string3}, string4:{string4}, type(string4):{string4.GetType()}");
+
+            string strWrap0 = @"This is 
+a multi-line string";
+            Console.WriteLine($"Type(string): strWrap0:{strWrap0}");
+
+            Console.WriteLine($"Type(string): string1.Length: {string1.Length}");
+            Console.WriteLine($"Type(string): string1[0]: {string1[0]}"); // first character
+            Console.WriteLine($"Type(string): string1[string1.Length - 1]: {string1[string1.Length - 1]}"); // last character
+
+            // "slicing", via Substring though  :/
+
+            string someText = "SomeText";
+            // slicing 2nd character to end
+            Console.WriteLine("Slicing: someText[1:] = " + someText.Substring(1));
+            // slicing 2nd to 5th character
+            Console.WriteLine("Slicing: someText[1:5] = " + someText.Substring(1, 5));
+            // slicing uyp to 5th character
+            //Console.WriteLine('Slicing: someText[:5] = " + someText.Substring([:5]));
+            // slicing 6th to 2nd last character
+            Console.WriteLine("Slicing: someText[5:-2] = " + someText.Substring(5, someText.Length - 2));
 
             object object0; // unassigned so can't use
             object object1 = null;
-            object someInt = new int();
+            object someNewInt = new int();
             Object object3 = null;
             Object person = new Person();
-            Console.WriteLine($"Type(object): object1:{object1}, someInt:{someInt}, object3:{object3}, person:{person}");
+            Console.WriteLine($"Type(object): object1:{object1}, someNewInt:{someNewInt}, object3:{object3}, person:{person}");
 
             // mostly like Object
             dynamic dynamic0; // unassigned so can't use
