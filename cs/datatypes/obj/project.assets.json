@@ -8,8 +8,7 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\i845471\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Matt\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -18,31 +17,26 @@
       "projectUniqueName": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\datatypes.csproj",
       "projectName": "datatypes",
       "projectPath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\datatypes.csproj",
-      "packagesPath": "C:\\Users\\i845471\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
       "outputPath": "C:\\xspace\\src\\github.com\\mparks007\\rosetta\\cs\\datatypes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\i845471\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net60"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://alnbld00.gdsx.com/NuGetDebug/": {},
-        "http://alnbld00.gdsx.com/NuGetExternal/": {},
-        "http://artifactory.concurtech.net/artifactory/api/nuget/nuget-sandbox-local": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
-          "targetAlias": "net60",
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -54,7 +48,7 @@
     },
     "frameworks": {
       "net6.0": {
-        "targetAlias": "net60",
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",

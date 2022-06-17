@@ -1,0 +1,15 @@
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net6.0\datatypes.exe
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net6.0\datatypes.deps.json
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net6.0\datatypes.runtimeconfig.json
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net6.0\datatypes.dll
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\bin\Debug\net6.0\datatypes.pdb
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.csproj.AssemblyReference.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.GeneratedMSBuildEditorConfig.editorconfig
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.AssemblyInfoInputs.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.AssemblyInfo.cs
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.csproj.CoreCompileInputs.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.dll
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\refint\datatypes.dll
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.pdb
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\datatypes.genruntimeconfig.cache
+C:\xspace\src\github.com\mparks007\rosetta\cs\datatypes\obj\Debug\net6.0\ref\datatypes.dll
