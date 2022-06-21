@@ -147,13 +147,13 @@ a multi-line string";
 
             string someText = "SomeText";
             // slicing 2nd character to end
-            Console.WriteLine("Slicing: someText[1:] = " + someText.Substring(1));
+            Console.WriteLine("Slicing: someText.Substring(1) = " + someText.Substring(1));
             // slicing 2nd to 5th character
-            Console.WriteLine("Slicing: someText[1:5] = " + someText.Substring(1, 5));
+            //Console.WriteLine("Slicing: someText[1:5] = " + someText.Substring(1, 5));
             // slicing uyp to 5th character
             //Console.WriteLine('Slicing: someText[:5] = " + someText.Substring([:5]));
             // slicing 6th to 2nd last character
-            Console.WriteLine("Slicing: someText[5:-2] = " + someText.Substring(5, someText.Length - 2));
+            //Console.WriteLine("Slicing: someText[5:-2] = " + someText.Substring(5, someText.Length - 2));
 
             object object0; // unassigned so can't use
             object object1 = null;
@@ -296,6 +296,50 @@ a multi-line string";
                 ["Name6"] = 75
             };
             Console.WriteLine($"Type(generic): myInfo3:{string.Join("\t", myInfo3)}");
+
+            //----------
+            // HashSet Type
+            //----------;
+            Console.WriteLine("\n***HashSet Type***\n");
+
+            var emptySet = new HashSet<string>();
+            Console.WriteLine($"Type(HashSet): emptySet:{String.Join(", ", emptySet)}");
+
+            var ctorViaList = new HashSet<string>(new string[]{"car", "truck", "van"});
+            Console.WriteLine($"Type(HashSet): ctorViaList:{String.Join(", ", ctorViaList)}");
+
+            Dictionary<string, string> homes = new Dictionary<string, string>
+            {
+                { "Small", "Cheap" },
+                { "Medium", "Affordable" },
+                { "Large", "BigLoan" }
+            };
+            var homeSizes = new HashSet<string>(homes.Keys); //  source is dict keys
+            Console.WriteLine($"Type(HashSet): homeSizes_contents:{String.Join(", ", homeSizes)}");
+            var homeCosts = new HashSet<string>(homes.Values); //  source is dict values
+            Console.WriteLine($"Type(HashSet): homeCosts_contents:{String.Join(", ", homeCosts)}");
+
+            var pets = new HashSet<string>(new string[]{"dog", "cat", "hamster", "dog"});
+            Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
+            pets.Add("fish");  // add a single element
+            Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
+            // add a list, including dupe dog to prove it doesn't dupe
+            pets.UnionWith(new HashSet<string>(new string[]{"dog", "turtle", "lizard"}));
+            Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
+            // remove something
+            pets.Remove("lizard");
+            Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
+            Console.WriteLine($"Type(HashSet): chicken in pets: " + pets.Contains("chicken"));
+            pets.Clear();
+            Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
+
+            var domesticAnimals = new HashSet<string>(new string[]{"dog", "cat", "elephant"});
+            var wildAnimals = new HashSet<string>(new string[]{"lion", "tiger", "elephant"});
+            var unionOfAnimals = domesticAnimals.Union(wildAnimals);
+            Console.WriteLine($"Type(HashSet): unionOfAnimals:{String.Join(", ", unionOfAnimals)}");
+            var intersectionOfAnimals = domesticAnimals.Intersect(wildAnimals);
+            Console.WriteLine($"Type(HashSet): intersectionOfAnimals:{String.Join(", ", intersectionOfAnimals)}");
+
 
             Console.WriteLine("\nDone!");
         }
