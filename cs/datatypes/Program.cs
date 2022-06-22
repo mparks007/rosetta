@@ -297,15 +297,15 @@ a multi-line string";
             };
             Console.WriteLine($"Type(generic): myInfo3:{string.Join("\t", myInfo3)}");
 
-            //----------
+            //-------------
             // HashSet Type
-            //----------;
+            //-------------
             Console.WriteLine("\n***HashSet Type***\n");
 
             var emptySet = new HashSet<string>();
             Console.WriteLine($"Type(HashSet): emptySet:{String.Join(", ", emptySet)}");
 
-            var ctorViaList = new HashSet<string>(new string[]{"car", "truck", "van"});
+            var ctorViaList = new HashSet<string>{"car", "truck", "van"};
             Console.WriteLine($"Type(HashSet): ctorViaList:{String.Join(", ", ctorViaList)}");
 
             Dictionary<string, string> homes = new Dictionary<string, string>
@@ -319,12 +319,12 @@ a multi-line string";
             var homeCosts = new HashSet<string>(homes.Values); //  source is dict values
             Console.WriteLine($"Type(HashSet): homeCosts_contents:{String.Join(", ", homeCosts)}");
 
-            var pets = new HashSet<string>(new string[]{"dog", "cat", "hamster", "dog"});
+            var pets = new HashSet<string>{"dog", "cat", "hamster", "dog"};
             Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
             pets.Add("fish");  // add a single element
             Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
             // add a list, including dupe dog to prove it doesn't dupe
-            pets.UnionWith(new HashSet<string>(new string[]{"dog", "turtle", "lizard"}));
+            pets.UnionWith(new HashSet<string>{"dog", "turtle", "lizard"});
             Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
             // remove something
             pets.Remove("lizard");
@@ -333,8 +333,8 @@ a multi-line string";
             pets.Clear();
             Console.WriteLine($"Type(HashSet): pets:{String.Join(", ", pets)}");
 
-            var domesticAnimals = new HashSet<string>(new string[]{"dog", "cat", "elephant"});
-            var wildAnimals = new HashSet<string>(new string[]{"lion", "tiger", "elephant"});
+            var domesticAnimals = new HashSet<string>{"dog", "cat", "elephant"};
+            var wildAnimals = new HashSet<string>{"lion", "tiger", "elephant"};
             var unionOfAnimals = domesticAnimals.Union(wildAnimals);
             Console.WriteLine($"Type(HashSet): unionOfAnimals:{String.Join(", ", unionOfAnimals)}");
             var intersectionOfAnimals = domesticAnimals.Intersect(wildAnimals);
